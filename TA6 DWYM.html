@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+    <html lang="es">
+
+        <head>
+            <title>TA6 Desarrollo web y mobile</title>
+        </head> 
+
+        <body>
+            <h1>Encuesta de Satisfacción</h1>
+            <form action="/submit_survey" method="post">
+            
+                <div>
+                    <label for="preferencias">¿Qué servicios utilizas frecuentemente? (Selecciona todos los que correspondan):</label>
+                    <br>
+                    <br>
+                    <select id="preferencias" name="preferencias" multiple>
+                        <option >Correo Electrónico</option>
+                        <option >Almacenamiento en la Nube</option>
+                        <option >Streaming de Video</option>
+                        <option >Redes Sociales</option>
+                        <option >Compras en Línea</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <p>¿Qué tan satisfecho estás con nuestros servicios?</p>
+                    <input type="radio" id="muy_satisfecho" name="satisfaccion" >
+                    <label for="muy_satisfecho">Muy satisfecho</label><br>
+                    
+                    <input type="radio" id="satisfecho" name="satisfaccion" >
+                    <label for="satisfecho">Satisfecho</label><br>
+                    
+                    <input type="radio" id="neutral" name="satisfaccion" >
+                    <label for="neutral">Neutral</label><br>
+                    
+                    <input type="radio" id="insatisfecho" name="satisfaccion" >
+                    <label for="insatisfecho">Insatisfecho</label><br>
+                    
+                    <input type="radio" id="muy_insatisfecho" name="satisfaccion" >
+                    <label for="muy_insatisfecho">Muy insatisfecho</label>
+                </div>
+                <br>
+                <div>
+                    <input type="submit" value="Enviar Encuesta">
+                </div>
+
+            </form>
+        </body>
+
+    </html>
